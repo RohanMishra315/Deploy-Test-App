@@ -8,22 +8,8 @@ This project demonstrates how to containerize a simple web application using **D
 ## 🚀 Technologies Used
 ✅ **Docker** - To containerize the web application  
 ✅ **Kubernetes (Minikube)** - To deploy the application  
-✅ **Flask (Python)** or **Express.js (Node.js)** - Web server framework  
+✅ **Express.js (Node.js)** - Web server framework  
 ✅ **Kubectl** - CLI tool for Kubernetes  
-
----
-
-## 📂 Project Structure
-```
- test-app/
- ├── app/
- │   ├── app.py              # Flask application (Python) OR index.js for Node.js
- │   ├── requirements.txt    # Python dependencies (for Flask) OR package.json for Node.js
- │
- ├── Dockerfile             # Dockerfile to containerize the app
- ├── deployment.yaml        # Kubernetes Deployment & Service configuration
- ├── README.md              # Project documentation (this file)
- ```
 
 ---
 
@@ -122,26 +108,4 @@ Then open [http://localhost:5000](http://localhost:5000) in your browser.
 
 ---
 
-## 🛑 Cleanup Resources
-To delete all Kubernetes resources:
-```sh
-kubectl delete -f deployment.yaml
-```
-To stop Minikube:
-```sh
-minikube stop
-```
-To delete Minikube cluster:
-```sh
-minikube delete
-```
-
----
-
-## 🎉 Conclusion
-Congratulations! 🎉 You've successfully containerized a web application, deployed it on Kubernetes using Minikube, and tested it. 🚀
-
-For any issues, feel free to open an [issue](https://github.com/your-username/test-app/issues) on GitHub!
-
-Happy Coding! 😃
 
