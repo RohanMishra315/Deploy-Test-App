@@ -3,7 +3,7 @@ name: Docker Build & Push
 on:
   push:
     branches:
-      - main  # Change to your default branch if needed
+      - main  
   pull_request:
 
 jobs:
@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/test-app:latest
+          tags: rohanmishra315/test-app:latest
